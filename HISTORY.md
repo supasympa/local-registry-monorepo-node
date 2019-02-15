@@ -10,3 +10,4 @@
 4. Set JKenkins Schedule to * * * * *    
     https://stackoverflow.com/questions/29975655/run-a-jenkins-job-every-one-minute-using-h-1    
 
+5. Lerna needs the Git binary to be able to publish 😞

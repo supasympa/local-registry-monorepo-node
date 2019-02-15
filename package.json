@@ -6,7 +6,7 @@
   "scripts": {
     "postinstall": "lerna bootstrap",
     "test": "lerna run test",
-    "test": "lerna run publish"
+    "publish": "lerna run publish"
   },
   "keywords": [],
   "author": "",
