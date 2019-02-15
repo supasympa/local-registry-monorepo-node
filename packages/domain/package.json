@@ -1,8 +1,11 @@
 {
   "name": "@supasympa/domain",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
   "main": "index.js",
+  "repository": {
+    "url": "https://github.com/supasympa/local-registry-monorepo-node"
+  },
   "scripts": {
     "test": "mocha --opts ./mocha.opts",
     "publish": "npx lerna publish --registry http://localhost:4873\n"
