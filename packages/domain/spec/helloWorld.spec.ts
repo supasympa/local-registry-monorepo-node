@@ -6,5 +6,9 @@ const { expect } = chai;
 describe('Hello World', () => {
     it('should be testable', () => {
         expect(helloWorld()).to.equal('Hello World!');
-    })
+    });
+
+    it('can run tests', () => {
+        expect(true).to.equal(true);
+    });
 });
