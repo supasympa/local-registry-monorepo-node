@@ -16,7 +16,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'echo \'We will Test here.\''
+                sh 'npm t'
             }
         }
         stage('Compile') {
