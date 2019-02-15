@@ -5,10 +5,28 @@ pipeline {
             args '-p 3000:3000'
         }
     }
+    environment {
+            CI = 'true'
+    }
     stages {
-        stage('Build') {
+        stage('Install') {
             steps {
-                sh 'npm install'
+                sh 'npm i'
+            }
+        }
+        stage('Test') {
+            steps {
+                sh 'echo \'We will Test here.\''
+            }
+        }
+        stage('Compile') {
+            steps {
+                sh 'echo \'We will Compile here.\''
+            }
+        }
+        stage('publish') {
+            steps {
+                sh 'echo \'We will publish here.\''
             }
         }
     }
