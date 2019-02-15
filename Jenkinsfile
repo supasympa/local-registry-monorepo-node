@@ -26,7 +26,7 @@ pipeline {
         }
         stage('publish') {
             steps {
-                sh 'echo \'We will publish here.\''
+                sh 'npm run publish'
             }
         }
     }
