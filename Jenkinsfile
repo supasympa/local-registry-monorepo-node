@@ -9,7 +9,7 @@ pipeline {
             CI = 'true'
     }
     stages {
-        stage('Install') {
+        stage('Install & Compile') {
             steps {
                 sh 'npm i'
             }
@@ -17,11 +17,6 @@ pipeline {
         stage('Test') {
             steps {
                 sh 'npm run ci:test'
-            }
-        }
-        stage('Compile') {
-            steps {
-                sh 'echo \'We will Compile here.\''
             }
         }
         stage('publish') {

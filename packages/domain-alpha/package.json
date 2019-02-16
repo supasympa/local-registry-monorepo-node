@@ -21,7 +21,8 @@
     "clean": "rimraf ./lib",
     "nuke": "rimraf ./lib && rimraf node_modules",
     "compile": "tsc",
-    "test": "jest"
+    "test": "jest",
+    "postinstall": "npm run compile"
   },
   "bugs": {
     "url": "https://github.com/supasympa/local-registry-monorepo-node/issues"
