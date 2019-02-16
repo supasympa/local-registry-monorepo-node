@@ -1,9 +1,8 @@
 pipeline {
     agent {
         dockerfile {
-            filename './docker/dockerfile.node-agent'
-            dir './docker/build'
-            label 'node-agent'
+            filename 'dockerfile.node-agent'
+            dir 'docker'
         }
     }
     environment {
