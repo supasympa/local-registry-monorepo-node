@@ -21,6 +21,8 @@ pipeline {
         }
         stage('publish') {
             steps {
+                sh 'git status'
+                sh 'git update-index --assume-unchanged package-lock.json'
                 sh 'npm run ci:publish'
             }
         }
