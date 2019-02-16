@@ -11,9 +11,9 @@
     "publish": "lerna run publish",
     "docker:ci-run": "docker run -p 8080:8080 -p 50000:50000  --name=jenkins-master  --mount source=jenkins-log,target=/var/log/jenkins -v /var/run/docker.sock:/var/run/docker.sock --mount source=jenkins-data,target=/var/jenkins_home -d ss_jenkins",
     "docker:ci-start": "docker start jenkins-master",
-    "docker:ci-stop": "docker start jenkins-master",
+    "docker:ci-stop": "docker stop jenkins-master",
     "ci:test": "npm t",
-    "ci:publish": "lerna publish from-package --registry http://localhost:4873 --yes --no-git-reset"
+    "ci:publish": "lerna publish from-package --registry http://172.17.0.3:4873 --yes --no-git-reset"
   },
   "husky": {
     "hooks": {
