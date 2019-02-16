@@ -16,7 +16,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'npm t'
+                sh 'npm run ci:test'
             }
         }
         stage('Compile') {
@@ -26,7 +26,7 @@ pipeline {
         }
         stage('publish') {
             steps {
-                sh 'lerna publish from-git --registry http://localhost:4873'
+                sh 'npm run ci:publish'
             }
         }
     }
