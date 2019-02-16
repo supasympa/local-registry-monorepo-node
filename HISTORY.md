@@ -11,3 +11,7 @@
     https://stackoverflow.com/questions/29975655/run-a-jenkins-job-every-one-minute-using-h-1    
 
 5. Lerna needs the Git binary to be able to publish 😞
+
+6. Dokerize the whole Jenkins thing: 
+    https://engineering.riotgames.com/news/docker-jenkins-data-persists
+    
