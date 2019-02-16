@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "postinstall": "lerna bootstrap",
+    "postinstall": "lerna bootstrap && lerna run test && lerna run compile",
     "test": "lerna run test",
+    "clean": "lerna run clean",
+    "nuke": "lerna run nuke",
     "publish": "lerna run publish",
     "docker:ci-run": "docker run -p 8080:8080 -p 50000:50000  --name=jenkins-master  --mount source=jenkins-log,target=/var/log/jenkins -v /var/run/docker.sock:/var/run/docker.sock --mount source=jenkins-data,target=/var/jenkins_home -d ss_jenkins",
     "docker:ci-start": "docker start jenkins-master",
@@ -25,6 +27,8 @@
     "husky": "^1.3.1",
     "jest": "^24.1.0",
     "lerna": "^3.13.0",
+    "rimraf": "^2.6.3",
+    "ts-jest": "^23.10.5",
     "ts-node": "^8.0.2",
     "typescript": "^3.3.3"
   }

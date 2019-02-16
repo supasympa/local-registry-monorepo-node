@@ -1,5 +1,5 @@
 {
-  "name": "@supaysympa/domain-alpha",
+  "name": "@supasympa/domain-alpha",
   "version": "1.0.0",
   "description": "Alpha domain",
   "author": "Lewis Barclay <lewis.barclay@googlemail.com>",
@@ -21,13 +21,10 @@
     "clean": "rimraf ./lib",
     "nuke": "rimraf ./lib && rimraf node_modules",
     "compile": "tsc",
-    "test": "jest",
-    "postinstall": "npm run compile"
+    "test": "jest"
   },
   "bugs": {
     "url": "https://github.com/supasympa/local-registry-monorepo-node/issues"
   },
-  "devDependencies": {
-    "rimraf": "^2.6.3"
-  }
+  "devDependencies": {}
 }

@@ -18,7 +18,10 @@
     "url": "git+https://github.com/supasympa/local-registry-monorepo-node.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "clean": "rimraf ./lib",
+    "nuke": "rimraf ./lib && rimraf node_modules",
+    "compile": "tsc",
+    "test": "jest"
   },
   "bugs": {
     "url": "https://github.com/supasympa/local-registry-monorepo-node/issues"
