@@ -1,4 +1,0 @@
---require ts-node/register
---sort
---timeout 1000
-./spec/**/*.spec.ts

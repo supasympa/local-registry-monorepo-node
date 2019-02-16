@@ -26,7 +26,7 @@ pipeline {
         }
         stage('publish') {
             steps {
-                sh 'npm run publish'
+                sh 'lerna publish from-git --registry http://localhost:4873'
             }
         }
     }
