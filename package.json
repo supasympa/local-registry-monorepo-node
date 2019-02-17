@@ -13,7 +13,7 @@
     "docker:ci-start": "docker start jenkins-master",
     "docker:ci-stop": "docker stop jenkins-master",
     "ci:test": "npm t",
-    "ci:publish": "lerna publish from-package --registry http://verdaccio:4873 --yes --no-git-reset"
+    "ci:publish": "lerna publish from-package --registry http://172.23.0.2:4873 --yes --no-git-reset"
   },
   "husky": {
     "hooks": {
