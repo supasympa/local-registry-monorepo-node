@@ -1,6 +1,6 @@
 {
   "name": "@supasympa/domain-alpha",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Alpha domain",
   "author": "Lewis Barclay <lewis.barclay@googlemail.com>",
   "homepage": "https://github.com/supasympa/local-registry-monorepo-node#readme",
@@ -26,6 +26,5 @@
   },
   "bugs": {
     "url": "https://github.com/supasympa/local-registry-monorepo-node/issues"
-  },
-  "devDependencies": {}
+  }
 }
