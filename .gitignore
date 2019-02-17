@@ -166,3 +166,5 @@ fabric.properties
 packages/*/lib
 /docker/jenkins-data/
 /docker/jenkins-log/
+/docker/verdaccio/storage/
+/docker/verdaccio/storage/.sinopia-db.json
