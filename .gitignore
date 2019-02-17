@@ -164,3 +164,5 @@ fabric.properties
 
 .idea
 packages/*/lib
+/docker/jenkins-data/
+/docker/jenkins-log/
