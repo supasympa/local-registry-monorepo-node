@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "postinstall": "lerna bootstrap",
-    "test": "lerna run test --since master",
+    "test": "lerna run test",
     "clean": "lerna run clean",
     "nuke": "lerna run nuke",
     "publish": "lerna publish --force-publish=* --registry http://localhost:4873 --yes --no-git-reset --canary --no-verify-access --no-verify-registry",
