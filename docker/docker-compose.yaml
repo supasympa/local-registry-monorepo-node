@@ -1,0 +1,25 @@
+version: '3'
+services:
+  verdaccio:
+    image: verdaccio/verdaccio
+    container_name: verdaccio-local
+    ports:
+      - "4873:4873"
+    volumes:
+      - "./verdaccio/storage:/verdaccio/storage"
+      - "./verdaccio/conf:/verdaccio/conf"
+  jenkins:
+    build:
+      context: .
+      dockerfile: Dockerfile.jenkins
+    ports:
+      - "8080:8080"
+      - "50000:50000"
+    container_name: jenkins-master
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"
+      - "./jenkins-log:/var/log/jenkins"
+      - "./jenkins-data:/var/jenkins_home"
+volumes:
+  verdaccio:
+    driver: local
